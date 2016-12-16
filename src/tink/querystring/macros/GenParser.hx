@@ -166,7 +166,7 @@ class GenParser {
     return _bool;
   
   public function date():Expr 
-    return pos.errorExpr('Date parsing not implemented');
+    return macro Date.fromTime($_int);
   
   public function bytes():Expr 
     return pos.errorExpr('Bytes parsing not implemented');
